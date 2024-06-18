@@ -42,3 +42,17 @@ const ourTeam = [
     },
 ];
 
+console.log(ourTeam);
+
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
+// ciclo nell'array per andare a prendere i singoli oggetti 
+for(let i = 0; i < ourTeam.length; i++){
+    // in una variabile salvo i singoli oggetti (le persone)
+    let teamPerson = ourTeam[i];
+    // per ogni oggetto preso poi stampo le informazioni al suo interno (for...in anche se sono poche le info)
+    for(let key in teamPerson){
+        console.log(key, ":", teamPerson[key]);
+    }
+
+}
