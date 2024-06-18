@@ -1,0 +1,45 @@
+/* codice generale */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* HEADER */
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+
+
+/* MAIN */
+main{
+    background-color: blanchedalmond;
+    padding: 40px;
+}
+
+
+/* istruzioni contanier */
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* istruzioni card */
+.card{
+    text-align: center;
+    width: 30%;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.card img{
+    width: 100%;
+}
