@@ -62,9 +62,15 @@ for(let i = 0; i < ourTeam.length; i++){
     // creo una card
     let cardTeam = createElemntWithClass("div", "card");
     // inserisco nell'html le informazioni tramite innerHTML così da prendere la stringa immagine come un percorso
-    cardTeam.innerHTML += `<img src="${imgPerson}" alt="">`;
-    cardTeam.innerHTML += `<h2>${namePerson}</h2>`;
-    cardTeam.innerHTML += `<h4>${rolePerson}</h4>`;
+    cardTeam.innerHTML += `
+    <img src="${imgPerson}" alt="">
+    <h2>${namePerson}</h2>
+    <h4>${rolePerson}</h4>
+    `;
+
+
+    // cardTeam.innerHTML += `<h2>${namePerson}</h2>`;
+    // cardTeam.innerHTML += `<h4>${rolePerson}</h4>`;
 
     containerCard.append(cardTeam);
     
