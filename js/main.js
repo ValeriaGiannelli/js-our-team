@@ -36,7 +36,7 @@ const ourTeam = [
         "foto": "img/scott-estrada-developer.jpg"
     },
     {
-        "nome": "barbara Ramos",
+        "nome": "Barbara Ramos",
         "ruolo": "Graphic Designer",
         "foto": "img/barbara-ramos-graphic-designer.jpg"
     },
@@ -44,15 +44,23 @@ const ourTeam = [
 
 console.log(ourTeam);
 
-// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
+// stampare in pagina
+const containerCard = document.querySelector(".container");
 
 // ciclo nell'array per andare a prendere i singoli oggetti 
 for(let i = 0; i < ourTeam.length; i++){
     // in una variabile salvo i singoli oggetti (le persone)
     let teamPerson = ourTeam[i];
+    // per ogni oggetto creo un elemento nel quale metterò poi le info a stringa
+    let infoPerson = createElemntWithClass("div", "team_person");
+    console.log(infoPerson);
+
     // per ogni oggetto preso poi stampo le informazioni al suo interno (for...in anche se sono poche le info)
     for(let key in teamPerson){
-        console.log(key, ":", teamPerson[key]);
+        // inserisco nel div creato le infor delle singole persone
+        infoPerson.innerHTML += `${teamPerson[key]} `;
+        console.log(key, ":", teamPerson[key]); // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
     }
-
+    containerCard.append(infoPerson);
 }
